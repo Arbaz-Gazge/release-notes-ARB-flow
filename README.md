@@ -1,3 +1,48 @@
+# v.0.012
+# Registration Form Enhancement: Data Capture & Automation
+
+This update introduces a more structured approach to patient data entry, improving data quality for reporting while simplifying the user experience through automation.
+
+---
+
+## 📋 Key Changes Implemented
+
+### 1. Split Name Fields
+The single "Patient's Name" input has been replaced with a structured layout to ensure professional formatting and better searchability.
+* **Title Dropdown:** Options for Mr., Mrs., Ms., Dr., etc.
+* **First Name:** Dedicated input (Required).
+* **Middle Name:** Dedicated input (Optional).
+* **Last Name:** Dedicated input (Required).
+* **Data Handling:** Upon submission, these components are concatenated (e.g., "Mr. John Doe") for legacy display compatibility, while `firstName` and `lastName` are stored as individual database fields for future reporting.
+
+### 2. Gender & Title Automation
+To speed up the registration process, a new logic layer connects gender selection to the title dropdown:
+* **Male Selection:** Automatically switches the Title to **Mr.**
+* **Female Selection:** Automatically switches the Title to **Mrs.** (per project requirements).
+* **Technical Implementation:** Powered by a new `autoSelectTitle(gender)` function injected into the page script.
+
+### 3. International Phone & WhatsApp Integration
+The phone number section has been upgraded from a static label to a functional global selector.
+* **Country Code Dropdown:** Replaced the static "+91" with a functional dropdown (Defaults to India +91, with options for US, UK, UAE, etc.).
+* **Dynamic WhatsApp Links:** The "Send WhatsApp Confirmation" feature now dynamically pulls the selected `countryCode` + `phoneNumber` to generate accurate links (e.g., `https://wa.me/15551234567`).
+* **Data Storage:** The system saves the 10-digit number as the primary `phone` (maintaining search compatibility) while storing the `countryCode` separately.
+
+---
+
+## 🛠 Technical Summary
+
+| Feature | Component | Logic Type |
+| :--- | :--- | :--- |
+| **Name Structure** | UI Layout | Concatenation on Submit |
+| **Title Auto-Fill** | `autoSelectTitle()` | Event Listener (Change) |
+| **Country Code** | Dropdown Menu | Dynamic String Building |
+| **WhatsApp** | API Integration | Variable URL Generation |
+
+---
+> **Status:** 🚀 **Live** | **Impact:** Improved data accuracy and reduced registration time.
+
+
+
 # UI Fix & Functionality Restoration Report
 
 This update resolves a critical visual regression in the Admin Panel and restores user profile interactions across the Registration and Consultation modules.
