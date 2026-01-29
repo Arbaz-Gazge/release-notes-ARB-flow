@@ -1,3 +1,8 @@
+# v 0.013
+Change Implemented:
+
+Replaced the verbose "No record found in Cloud DB. Please fill the New Patient form." message.
+The new message is simply "Patient not found", displayed within the same styled success/notification box to maintain the UI consistency.
 # v 0.012
 # Registration Form Enhancement: Data Capture & Automation
 
