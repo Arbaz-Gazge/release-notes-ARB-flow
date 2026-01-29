@@ -1,4 +1,4 @@
-# v.0.012
+# v 0.012
 # Registration Form Enhancement: Data Capture & Automation
 
 This update introduces a more structured approach to patient data entry, improving data quality for reporting while simplifying the user experience through automation.
