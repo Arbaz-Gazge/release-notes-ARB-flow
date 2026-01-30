@@ -1,4 +1,4 @@
-# Arb-Flow Hospital Management System - Version 2.0 Feature & Changelog
+# Arb-Flow Hospital Management System - Version 0.015 Feature & Changelog
 
 This document summarizes all major features and recent changes implemented in the **Arb-Flow** Hospital Management System.
 
@@ -70,16 +70,6 @@ A comprehensive In-Patient Department system designed for seamless ward manageme
 
 ---
 
-## 📂 File Structure Highlights
-- `index.html`: Modern Login Portal.
-- `registration.html`: Front Desk Dashboard.
-- `consultation.html`: Doctor's Interface (OPD).
-- `ipd.html`: **[NEW]** In-Patient Department Dashboard.
-- `admin.html`: Management Dashboard.
-- `ipd.js`: **[NEW]** Core logic for Bed Management & Admissions.
-- `consultation.js`: PDF Generation & Clinical logic.
-- `core.js`: Shared logic (Firebase conn, Auth checks).
-- `logo_full.png` & `logo_symbol.png`: New high-res brand assets.
 
 ---
 **Status:** IPD Module is Live. PDF Generation is Optimized. Branding is Consistent.
