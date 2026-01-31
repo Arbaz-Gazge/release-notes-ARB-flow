@@ -1,6 +1,6 @@
 # Version 0.016
 ## Updates:
-*** Search Input *** : Removed the "numbers only" restriction so you can now type alphanumeric UHIDs (e.g., ARB123).
+** Search Input ** : Removed the "numbers only" restriction so you can now type alphanumeric UHIDs (e.g., ARB123).
 Label & Placeholder: Updated to explicitly say "Search by Phone or UHID".
 Instruction Text: Updated to reflect that both methods work.
 
