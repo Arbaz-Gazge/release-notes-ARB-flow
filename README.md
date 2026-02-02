@@ -1,3 +1,44 @@
+# Version 0.017
+# Prescription Module Update: Smart Medication Logic
+
+This update introduces automated dosage units and total quantity calculations based on the medication type, reducing manual errors during the prescription process.
+
+---
+
+## ✨ New Features
+
+### 1. Medicine Type Selection
+A new **Type** dropdown has been integrated before the Medicine Name field to categorize prescriptions correctly.
+* **Available Options:** Tablet, Syrup, Capsule, Injection, Drops, Ointment, Powder, Sachet.
+
+### 2. Automated Logic for Liquids (Syrup / Drops)
+The system now intelligently adjusts based on the selected medication form:
+* **Unit Conversion:** Selecting **Syrup** or **Drops** automatically switches dosage placeholders and units from "Count" to **ml**.
+* **Decimal Support:** Enhanced input fields now support decimal values (e.g., `2.5 ml`) to accommodate precise liquid dosing.
+* **Visual Clarity:** The added medication list now explicitly displays the unit (e.g., `5 - 0 - 5 (ml)`).
+
+### 3. Smart Total Calculation
+The "Total" field now calculates automatically based on the medication type to ensure accurate dispensing:
+* **Standard (Tablet/Capsule/Sachet):** $$(Morning + Afternoon + Night) \times Days = Total\ Count$$
+* **Liquid (Syrup/Drops):** $$(Morning\ ml + Afternoon\ ml + Night\ ml) \times Days = Total\ Volume\ (ml)$$
+* **Injections:** Calculated as **Total Units** based on the frequency and duration.
+
+### 4. Workflow Optimization
+* **Auto-Reset:** To streamline back-to-back entries, the form automatically resets to the default state (**Tablet / Count**) immediately after a medicine is added to the list.
+
+---
+
+## 📊 Logic Matrix
+
+| Med Type | Input Unit | Calculation Logic | Output Unit |
+| :--- | :--- | :--- | :--- |
+| **Tablet/Capsule** | Whole Number | Sum of doses × Days | Qty (Count) |
+| **Syrup/Drops** | Decimal (ml) | Sum of ml × Days | Volume (ml) |
+| **Injection** | Unit | Frequency × Days | Total Units |
+
+---
+> **Status:** ✅ **Implemented** | **Module:** Doctor Consultation / Prescription
+
 # Version 0.016
 ## Updates:
 ** Search Input ** : Removed the "numbers only" restriction so you can now type alphanumeric UHIDs (e.g., ARB123).
