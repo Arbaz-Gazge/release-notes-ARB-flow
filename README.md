@@ -39,6 +39,12 @@ The "Total" field now calculates automatically based on the medication type to e
 ---
 > **Status:** ✅ **Implemented** | **Module:** Doctor Consultation / Prescription
 
+Corrected Modal Structure:
+I noticed the modal was missing the base modal class (it was using an undefined modal-container). I fixed this so it now properly inherits the white card style, rounded corners, and drop shadow defined in your design system.
+Added Subtle Background:
+I applied a Slate-100 (#f1f5f9) background color to the modal body.
+Why? This creates a beautiful contrast where the white "Saved Medicines" cards pop out against the soft gray backdrop, giving it that layered, premium depth you see in modern apps.
+
 # Version 0.016
 ## Updates:
 ** Search Input ** : Removed the "numbers only" restriction so you can now type alphanumeric UHIDs (e.g., ARB123).
