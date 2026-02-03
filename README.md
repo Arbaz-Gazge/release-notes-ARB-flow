@@ -1,4 +1,33 @@
 # Version 0.017
+# Prescription PDF Enhancement: Professional Formatting
+
+This update resolves the missing medication context in the generated PDF reports, ensuring that the prescription document provides clear instructions for both pharmacists and patients.
+
+---
+
+## 🛠 Fix Applied: Medicine Type Visibility
+
+Previously, the generated PDF only displayed the medicine name, which could lead to confusion regarding the form of medication.
+
+### Key Improvement
+* **Contextual Prefixes:** The PDF generation logic has been modified to automatically prepend the **Medicine Type** (e.g., Tablet, Syrup, Injection) to the **Medicine Name**.
+* **Automatic Concatenation:** The system now pulls the type selected during the consultation and joins it with the name field before rendering the document.
+
+### 📄 Visual Result
+The "Medicine" column in the PDF prescription will now display clearly structured entries:
+* **Old Format:** `DOLO 650`
+* **New Format:** `Tablet DOLO 650`
+* **Liquid Format:** `Syrup Cough Syrup`
+* **Injectable Format:** `Injection Pantoprazole`
+
+---
+
+## 📂 Affected Module
+* **PDF Generation Engine:** Updated the mapping logic for the "Medicine" column array.
+* **Consultation Module:** Verified that the data object passed to the PDF generator includes the `medicineType` attribute.
+
+---
+> **Status:** ✅ **Fixed** | **Benefit:** Improved prescription clarity and reduced dispensing errors.
 # Prescription Module Update: Smart Medication Logic
 
 This update introduces automated dosage units and total quantity calculations based on the medication type, reducing manual errors during the prescription process.
