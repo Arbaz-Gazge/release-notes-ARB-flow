@@ -16,9 +16,9 @@ Previously, the generated PDF only displayed the medicine name, which could lead
 ### 📄 Visual Result
 The "Medicine" column in the PDF prescription will now display clearly structured entries:
 * **Old Format:** `DOLO 650`
-* **New Format:** `Tablet DOLO 650`
-* **Liquid Format:** `Syrup Cough Syrup`
-* **Injectable Format:** `Injection Pantoprazole`
+* **New Format:** `Tab DOLO 650`
+* **Liquid Format:** `Syr Cough Syrup`
+* **Injectable Format:** `Inje Pantoprazole`
 
 ---
 
