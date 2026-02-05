@@ -1,3 +1,19 @@
+## 🛠 Recent Changelog (Version 0.018 Updates) - Efficiency & UI Boost
+
+### ⚡ Smart Workflow Enhancements
+- **Quick Paste Feature**: Doctors can now instantly copy data from a patient's **Previous Visit** with a single click.
+  - **General Paste**: "Paste" button on history items to copy the entire previous consultation.
+  - **Section-Specific Paste**: Dedicated "**Paste**" buttons in Chief Complaints, Diagnosis, Rx, History, and Lab sections to copy *only* relevant data.
+  - **Context-Aware Modal**: Popup showing previous visits with smart previews of the specific section data to be copied.
+- **Sidebar Toggle**: Collapsible "Queue" sidebar to maximize screen real estate for clinical notes. Smooth animation and compact mode support.
+
+### 🎨 UI/UX Refinements
+- **Custom Iconography**: Replaced standard emojis with **Premium SVG Icons** throughout the application (Paste buttons, Section headers, Navigation).
+- **Vitals Update**: Removed "RR" (Respiratory Rate) from the quick capture form to streamline the workflow.
+- **Visual Polish**: Improved button styles, hover effects, and layout alignment in the Consultation module.
+
+
+
 # Version 0.017
 # Prescription PDF Enhancement: Professional Formatting
 
