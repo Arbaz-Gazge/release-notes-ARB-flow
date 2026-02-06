@@ -1,3 +1,19 @@
+# 🛠 Recent Changelog (Version 0.019 Updates)
+## Features Added:
+
+Lab Manager Modal: A new modal to Add/Delete items from your master "Lab/Investigation" list.
+Auto-Complete Input: A search bar in the Investigation section that suggests tests from your master list as you type.
+Add Button: Quickly adds the selected test to the main text area (appending it with a newline).
+Auto-Save: If you type a test name that isn't in your master list and click "Add", it asks if you want to save it to your master list for future use.
+You can now manage your Lab Tests (e.g., CBC, Lipid Profile, X-Ray) just as efficiently as your Medications.
+
+
+
+
+
+
+
+
 ## 🛠 Recent Changelog (Version 0.018 Updates) - Efficiency & UI Boost
 
 ### ⚡ Smart Workflow Enhancements
